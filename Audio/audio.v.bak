@@ -1,0 +1,51 @@
+module Audio_main(input CLOCK_50, 
+
+if (clock_cnt == 11'd1200)
+	begin
+		add_count <= soundstrt;
+	end
+
+endmodule 
+
+
+
+audio_ram ar(
+	.address(address_count),
+	.clock(CLOCK_50),
+	.data(,
+	.wren(1'b0),
+	.q(audio_out_ram));
+
+
+
+
+Audio_Controller  AC (
+	// Inputs
+	CLOCK_50,
+	reset,
+
+	clear_audio_in_memory,	
+	read_audio_in,
+
+	clear_audio_out_memory,
+	left_channel_audio_out,
+	right_channel_audio_out,
+	write_audio_out,
+
+	AUD_ADCDAT,
+
+	// Bidirectionals
+	AUD_BCLK,
+	AUD_ADCLRCK,
+	AUD_DACLRCK,
+
+	// Outputs
+	left_channel_audio_in,
+	right_channel_audio_in,
+	audio_in_available,
+
+	audio_out_allowed,
+
+	AUD_XCK,
+	AUD_DACDAT
+);

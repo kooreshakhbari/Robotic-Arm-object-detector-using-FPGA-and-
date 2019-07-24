@@ -1,0 +1,27 @@
+
+State Machine - |DE1_SoC_TV|I2C_AV_Config:u1|mSetup_ST
+Name mSetup_ST.0000 mSetup_ST.0010 mSetup_ST.0001 
+mSetup_ST.0000 0 0 0 
+mSetup_ST.0001 1 0 1 
+mSetup_ST.0010 1 1 0 
+
+State Machine - |DE1_SoC_TV|GPIO_Arduino:ARD1|control_ard:C0|current_state
+Name current_state.STOP current_state.SET_STOP current_state.PLACE current_state.SET_PLACE current_state.SEARCH_META current_state.SEARCH current_state.SET_SEARCH current_state.RESET current_state.SET_RESET current_state.START_ROUTINE 
+current_state.START_ROUTINE 0 0 0 0 0 0 0 0 0 0 
+current_state.SET_RESET 0 0 0 0 0 0 0 0 1 1 
+current_state.RESET 0 0 0 0 0 0 0 1 0 1 
+current_state.SET_SEARCH 0 0 0 0 0 0 1 0 0 1 
+current_state.SEARCH 0 0 0 0 0 1 0 0 0 1 
+current_state.SEARCH_META 0 0 0 0 1 0 0 0 0 1 
+current_state.SET_PLACE 0 0 0 1 0 0 0 0 0 1 
+current_state.PLACE 0 0 1 0 0 0 0 0 0 1 
+current_state.SET_STOP 0 1 0 0 0 0 0 0 0 1 
+current_state.STOP 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |DE1_SoC_TV|pixel_sequence_detector:P1|control:C1|current_state
+Name current_state.NEW_PIXEL current_state.COUNT_PIXEL current_state.REG_START current_state.READ_PIXEL current_state.REG_END 
+current_state.READ_PIXEL 0 0 0 0 0 
+current_state.REG_START 0 0 1 1 0 
+current_state.COUNT_PIXEL 0 1 0 1 0 
+current_state.NEW_PIXEL 1 0 0 1 0 
+current_state.REG_END 0 0 0 1 1 

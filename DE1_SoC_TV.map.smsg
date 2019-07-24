@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at pixel_detection_real_time.v(333): always construct contains both blocking and non-blocking assignments File: C:/Users/kooresh/Documents/Potential Submissions/Sw sound reduced/trying/DE1_SoC_TV/pixel_detection_real_time.v Line: 333
+Info (10281): Verilog HDL Declaration information at GPIO_arduino_interface.v(45): object "reset" differs only in case from object "RESET" in the same scope File: C:/Users/kooresh/Documents/Potential Submissions/Sw sound reduced/trying/DE1_SoC_TV/GPIO_arduino_interface.v Line: 45

@@ -1,0 +1,53 @@
+module Color_Filter (
+input clk,
+input reset,
+input [7:0] oVGA_Red,
+input [7:0] oVGA_Green,
+input [7:0] oVGA_Blue,
+output reg [23:0] filtered_color);
+//temp channels for color extraction
+reg [7:0] filtered_Red;
+reg [7:0] filtered_Green;
+reg [7:0] filtered_Blue;
+//temp channels for grayscale conversion
+reg [7:0] greyscale_Red;
+reg [7:0] greyscale_Green;
+reg [7:0] greyscale_Blue;
+//temp channels for black -> white conversion
+reg [7:0] updated_greyscale_Red;
+reg [7:0] updated_greyscale_Green;
+reg [7:0] updated_greyscale_Blue;
+//values for color extraction
+parameter redFilterValue = 150;
+parameter greenFilterValue = 110;
+parameter blueFilterValue = 110;
+parameter white = 8'b11111111;
+//filter out all color that isn't red
+always @ (posedge clk) begin
+	filtered_Red <= (oVGA_Red >= redFilterValue && oVGA_Green <= greenFilterValue &&
+	oVGA_Blue <= blueFilterValue) ? oVGA_Red : 0;
+	filtered_Green <= (oVGA_Red >= redFilterValue && oVGA_Green <= greenFilterValue &&
+	oVGA_Blue <= blueFilterValue) ? oVGA_Green : 0;
+	filtered_Blue <= (oVGA_Red >= redFilterValue && oVGA_Green <= greenFilterValue &&
+	oVGA_Blue <= blueFilterValue) ? oVGA_Blue : 0;
+end
+//RGB->Greyscale
+always @ (posedge clk) begin
+	greyscale_Red <= (filtered_Red>>2) + (filtered_Red>>5) + (filtered_Green>>1) +
+	(filtered_Green>>4) + (filtered_Blue>>4) + (filtered_Blue>>5);
+	greyscale_Green <= (filtered_Red>>2) + (filtered_Red>>5) + (filtered_Green>>1) +
+	(filtered_Green>>4) + (filtered_Blue>>4) + (filtered_Blue>>5);
+	greyscale_Blue <= (filtered_Red>>2) + (filtered_Red>>5) + (filtered_Green>>1) +
+	(filtered_Green>>4) + (filtered_Blue>>4) + (filtered_Blue>>5);
+end
+//Changes all greyscale values below 51 to white (black -> whtie)
+always @ (posedge clk) begin
+	updated_greyscale_Red = (greyscale_Red < 51) ? white : greyscale_Red;
+	updated_greyscale_Green = (greyscale_Green < 51) ? white : greyscale_Green;
+	updated_greyscale_Blue = (greyscale_Blue < 51) ? white : greyscale_Blue;
+end
+//appends the three channels together to be the output 24 bit image data
+always @ (posedge clk) begin
+	filtered_color <= {updated_greyscale_Red, updated_greyscale_Blue, updated_greyscale_Green};
+end
+endmodule //

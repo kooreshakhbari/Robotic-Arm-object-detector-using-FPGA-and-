@@ -1,0 +1,20 @@
+Fitter Status : Successful - Mon Nov 26 05:19:13 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : DE1_SoC_TV
+Top-level Entity Name : DE1_SoC_TV
+Family : Cyclone V
+Device : 5CSEMA5F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 891 / 32,070 ( 3 % )
+Total registers : 1496
+Total pins : 210 / 457 ( 46 % )
+Total virtual pins : 0
+Total block memory bits : 446,432 / 4,065,280 ( 11 % )
+Total RAM Blocks : 58 / 397 ( 15 % )
+Total DSP Blocks : 6 / 87 ( 7 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 2 / 6 ( 33 % )
+Total DLLs : 0 / 4 ( 0 % )

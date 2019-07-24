@@ -1,0 +1,245 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -6.581
+TNS   : -541.575
+
+Type  : Slow 1100mV 85C Model Setup 'clock_27_1'
+Slack : 4.469
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'clock_50_0'
+Slack : 5.695
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock_27_1'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock_50_0'
+Slack : 0.221
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -6.739
+TNS   : -2563.171
+
+Type  : Slow 1100mV 85C Model Recovery 'clock_27_1'
+Slack : 3.012
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'clock_27_1'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.621
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'audio|AC|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.822
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_50_0'
+Slack : 8.824
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_27_1'
+Slack : 13.907
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -6.550
+TNS   : -531.393
+
+Type  : Slow 1100mV 0C Model Setup 'clock_27_1'
+Slack : 4.809
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clock_50_0'
+Slack : 5.748
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock_27_1'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock_50_0'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -6.509
+TNS   : -2473.633
+
+Type  : Slow 1100mV 0C Model Recovery 'clock_27_1'
+Slack : 3.223
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'clock_27_1'
+Slack : 0.266
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.440
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'audio|AC|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.804
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_50_0'
+Slack : 8.793
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_27_1'
+Slack : 13.935
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -4.263
+TNS   : -342.418
+
+Type  : Fast 1100mV 85C Model Setup 'clock_27_1'
+Slack : 6.237
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clock_50_0'
+Slack : 7.209
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock_50_0'
+Slack : 0.133
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock_27_1'
+Slack : 0.160
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -4.429
+TNS   : -1691.036
+
+Type  : Fast 1100mV 85C Model Recovery 'clock_27_1'
+Slack : 5.249
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'clock_27_1'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.101
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'audio|AC|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.931
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_50_0'
+Slack : 8.476
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_27_1'
+Slack : 13.509
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -3.879
+TNS   : -314.897
+
+Type  : Fast 1100mV 0C Model Setup 'clock_27_1'
+Slack : 6.731
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clock_50_0'
+Slack : 7.382
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock_27_1'
+Slack : 0.092
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock_50_0'
+Slack : 0.121
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -4.047
+TNS   : -1538.695
+
+Type  : Fast 1100mV 0C Model Recovery 'clock_27_1'
+Slack : 5.778
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'clock_27_1'
+Slack : 0.057
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.856
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'audio|AC|Audio_Clock|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'u6|sdram_pll1|sdram_pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.930
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_50_0'
+Slack : 8.431
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_27_1'
+Slack : 13.464
+TNS   : 0.000
+
+------------------------------------------------------------

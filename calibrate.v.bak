@@ -1,0 +1,6 @@
+module callibrate(input [9:0] SW,
+						input [3:0] KEY,
+						input [7:0] pixel_count,
+						input [9:0] color_count,
+						output reg 
+						

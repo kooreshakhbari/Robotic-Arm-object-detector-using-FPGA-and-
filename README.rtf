@@ -1,0 +1,21 @@
+
+The goal of our project was to make a robot that detects a cup and puts a coin into that cup. 
+This was a practical use for demonstrating object detection and tracking its location in space
+all using an FPGA (DE1 SoC) that also coordinates with an Arduino.
+
+We started with the intention to make a robot that is controlled by the FPGA. 
+After consulting our Teaching assistant and iterating on our idea a few times, we finally decided 
+to make a robot that has a camera mounted on it, rotates in a certain radius to find an object, in our case a cup, 
+then drops an item into the cup. 
+All of the video processing is done on the FPGA and we also used an Arduino with a motor controller
+to interface the motors, since they can't communicate with FPGAs directly. 
+Our system has the flexibility to detect objects of variable sizes and different colors by 
+allowing calibration of the corresponding thresholds. Another use of this robotic system 
+would be for it to track a moving object in its field, while the structure itself can be 
+adapted for other uses such one with an end-effector for drawing all kinds of sketches on a paper.
+
+The folder called V also contains some of the other essential files that we wrote for the project. \
+
+Video Demo: https://drive.google.com/open?id=1yneJ2qvjNRqocRX1yirTKDJZnlsUCl54\
+
+Project by: Pranshu Malik and Kooresh Akhbari
